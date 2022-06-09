@@ -1,6 +1,6 @@
-name: wr
+name: starter
 version: "0.1.0"
-author: Jean-Philippe Bidegain <jp@bidega.in>
+author: Benjamin Pelto <jp@bidega.in>
 about: Deploy websites using git flow and gitlab
 args:
     - deploy:

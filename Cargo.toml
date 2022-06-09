@@ -1,7 +1,8 @@
 [package]
-name = "wr"
+name = "starter"
 version = "0.1.0"
 edition = "2021"
+authors = ["Benjamin <benjophp@gmail.com>"]
 
 [dependencies]
 anyhow = "1.0.44"

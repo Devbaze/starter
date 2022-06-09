@@ -79,7 +79,7 @@ pub fn get_repository() -> Result<Repository, Error> {
     let current_dir = env::current_dir().unwrap();
     let repository = match Repository::open(current_dir) {
         Ok(repo) => repo,
-        Err(_) => return Err(anyhow!("Please launch wr in a git repository.")),
+        Err(_) => return Err(anyhow!("Please launch starter in a git repository.")),
     };
     debug!("Found git repository.");
 
@@ -119,8 +119,8 @@ mod tests {
     #[test]
     fn extracts_project_name_from_a_ssh_remote_url() {
         assert_eq!(
-            "human/wr",
-            extract_project_name_from_remote_url("git@github.com:devbaze/wr.git")
+            "devbaze/starter",
+            extract_project_name_from_remote_url("git@github.com:devbaze/starter.git")
         )
     }
 }

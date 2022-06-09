@@ -154,7 +154,7 @@ impl System<'_> {
         match (statuses.is_empty()).then(|| 0) {
             Some(_) => Ok(()),
             _ => Err(anyhow!(
-                "Repository is dirty. Please commit or stash your last changes before running wr."
+                "Repository is dirty. Please commit or stash your last changes before running starter."
             )),
         }
     }

@@ -72,9 +72,9 @@ fn app() -> Result<(), Error> {
     env::set_var("GIT_MERGE_AUTOEDIT", "no");
 
     // Init
-    info!("Welcome to wr.");
-    let gitlab_host = env::var("WR_GITLAB_HOST").unwrap_or_else(|_| "gitlab.com".to_string());
-    let gitlab_token = env::var("WR_GITLAB_TOKEN").unwrap_or_else(|_| "".to_string());
+    info!("Welcome to starter.");
+    let gitlab_host = env::var("STARTER_GITLAB_HOST").unwrap_or_else(|_| "gitlab.com".to_string());
+    let gitlab_token = env::var("STARTER_GITLAB_TOKEN").unwrap_or_else(|_| "".to_string());
 
     // Get a git2 "Repository" struct
     let repository = get_repository()?;
